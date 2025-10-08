@@ -1,6 +1,13 @@
-
 	BITS 64
 	CPU X64
+
+
+	;; NOTE(mike): readonly datas to be placed in this section
+	section .rodata
+sun_path:	db "/tmp/.X11-unix/X0", 0
+	static sun_path:data
+	
+	
 
 	section .text
 	;; NOTE(mickey): macros
